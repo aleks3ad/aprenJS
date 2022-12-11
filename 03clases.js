@@ -43,13 +43,14 @@ oAni = new Animal("y",5);
 oAni = new Animal("J",3);
 
 //───────────────────────────────────────────
+//dar id solo hasta un limite de muebles
 class Mueble{
-    static CONT=1;
-    static MAXCONT=3;
+    static cont=0;
+    static maxCont=2;
     constructor(color){
         this._color=color;
-        if(Mueble.CONT<Mueble.MAXCONT){            
-            this._id=Mueble.CONT++;
+        if(Mueble.cont<Mueble.maxCont){            
+            this._id=++Mueble.cont;
         }
     }
     toString(){
