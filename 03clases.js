@@ -46,10 +46,10 @@ oAni = new Animal("J",3);
 //dar id solo hasta un limite de muebles
 class Mueble{
     static cont=0;
-    static maxCont=2;
+    static MAXCONT=2;
     constructor(color){
         this._color=color;
-        if(Mueble.cont<Mueble.maxCont){            
+        if(Mueble.cont<Mueble.MAXCONT){            
             this._id=++Mueble.cont;
         }
     }
@@ -62,3 +62,7 @@ mesa = new Mueble("azul")
 escri = new Mueble("verde")
 console.log(mesa.toString());
 console.log(escri.toString());
+
+//───────────────────────────────────────────
+//polimorfismo, cuando una funcion recibe un tipoObjec
+//y segun el tipo ejecutan la funcion segun sobreescribieron
