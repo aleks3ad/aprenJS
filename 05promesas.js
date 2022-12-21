@@ -19,6 +19,7 @@
 // setTimeout(()=>console.log("hola"),2000);
 // console.log("fin");
 //────────────────────────────────────
+// await para esperar por una promesa
 async function promesa2(){
     let ale2 = new Promise( resolved2 =>{
         setTimeout(()=>resolved2('resuelta con await'),2000);
