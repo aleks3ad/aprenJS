@@ -25,5 +25,10 @@ funflecha2();
 let funflecha3 = () => "flecha3";
 console.log(funflecha3());
 
-//uso de timeout
-setTimeout(()=>console.log("hola"),1000)
+//timeout: subrutina se inicie auto.. en un t
+// setTimeout(()=>console.log("1er"),2000);
+// setTimeout(()=>console.log("2do"),1000);
+
+//setInterval subrutina se inicie auto y repe
+//Ctrl+c para detener
+setInterval(()=>console.log("1er"),1000);
