@@ -30,5 +30,5 @@ console.log(funflecha3());
 // setTimeout(()=>console.log("2do"),1000);
 
 //setInterval subrutina se inicie auto y repe
-//Ctrl+c para detener
-setInterval(()=>console.log("1er"),1000);
+//Ctrl+c para detener (asincrona)
+// setInterval(()=>console.log("1er"),1000);
