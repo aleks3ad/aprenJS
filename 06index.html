@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 id="1">ejemplo DOM</h1>
+    <p id="2">saludos a todos</p>
+    <script>
+        // mostrar text x id
+        let x = document.getElementById('1').innerHTML;
+        console.log(x);
+        let y = document.getElementById('2');
+        console.log(y);
+        
+        //mostrar text x id 2
+        let z = document.getElementById('2')
+        console.log(`${z.innerHTML}`)
+        z.innerHTML = 'saludos a mi';
+
+    </script>
 </body>
 </html>
