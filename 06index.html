@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="1">ejemplo DOM</h1>
+    <p id="1">ejemplo DOM</p>
     <p id="2">saludos a todos</p>
     <script>
         // mostrar text x id
@@ -15,11 +15,21 @@
         console.log(x);
         let y = document.getElementById('2');
         console.log(y);
-        
+
+        console.log("2 parte")
         //mostrar text x id 2
-        let z = document.getElementById('2')
-        console.log(`${z.innerHTML}`)
+        let z = document.getElementById('2');
+        console.log(`${z.innerHTML}`);
         z.innerHTML = 'saludos a mi';
+
+        console.log("3ra parte")
+        //mostrar x tag
+        let a = document.getElementsByTagName('p');
+        console.log()
+        for(i=0;i<a.length;i++){
+            console.log(a[i]);
+        }
+       
 
     </script>
 </body>
