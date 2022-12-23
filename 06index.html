@@ -9,6 +9,8 @@
 <body>
     <p id="1">ejemplo DOM</p>
     <p id="2">saludos a todos</p>
+    <p class="3">El mundo es </p>
+    <p class="3">ancho y ajeno </p>
     <script>
         // mostrar text x id
         let x = document.getElementById('1').innerHTML;
@@ -16,20 +18,27 @@
         let y = document.getElementById('2');
         console.log(y);
 
-        console.log("2 parte")
+        console.log("\n"+"2 parte")
         //mostrar text x id 2
         let z = document.getElementById('2');
         console.log(`${z.innerHTML}`);
         z.innerHTML = 'saludos a mi';
 
-        console.log("3ra parte")
+        console.log("\n"+"3ra parte")
         //mostrar x tag
         let a = document.getElementsByTagName('p');
-        console.log("a")
+        console.log("⠀⠀"+typeof a);
+        console.log("⠀⠀"+typeof a[1].innerHTML);
         for(i=0;i<a.length;i++){
-            console.log(a[i]);
+            console.log(a[i].innerHTML);
         }
-       
+
+        console.log("\n"+"4ra parte")
+        //mostrar x class
+        let b = document.getElementsByClassName("3");
+        for(let b1 of b){
+            console.log(b1.innerHTML);
+        }       
 
     </script>
 </body>
