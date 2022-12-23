@@ -11,22 +11,17 @@
         Usuario: <input type="text" name="usu" value="alex"><br>
         Password:<input type="text" name="pass" value="123">
     </form>
-    <button onclick='mos()'>mostra</button>
-    <textarea name="" id="12" cols="30" rows="5"></textarea>
+    <button onclick='mos()'>mostrar</button>
+    <textarea id="12" cols="30" rows="5"></textarea>
     
     <script>
         function mos(){
             let of1 = document.forms['f1'];
             let texto = '';
             for (let e of of1) {
-                texto += e.value + '<br>';
+                texto += e.value + "\n";
             }
-            
-            x = document.querySelectorAll('input[type="text"]');
-            for (let i = 0; i < x.length; i++) {
-                document.getElementById("12").value = x[i].value
-            }
-            
+            document.getElementById("12").innerHTML = texto;
         }
     </script>
 </body>
